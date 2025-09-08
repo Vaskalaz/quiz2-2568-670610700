@@ -9,12 +9,25 @@ type FoodProps = {
   onDelete: () => void;
 };
 
-export default function ItemCard() {
+export default function ItemCard({
+  name,
+  price,
+  quantity,
+  category,
+  onDelete,
+}: FoodProps) {
   // หากต้องการเปลี่ยนแปลง type ชนิด string เป็น number สามารถใช้วิธีการดังโค้ดตัวอย่างด้านล่างนี้ได้
   let val_number: number = Number("500.0");
   console.log(val_number + 100); // 600.0
 
   return {
     /* Type additional text here. */
+    <Card shadow="sm" padding="lg" radius="md" withBorder>
+    <Group justify="space-between">
+    <Text>
+    {name} {price}x{quantity} {category} {}
+    </Text>
+    </Group>
+    </Card>
   };
 }
