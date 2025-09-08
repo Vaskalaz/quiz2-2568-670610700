@@ -1,31 +1,31 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Button, Stack, Title, Divider, Container } from "@mantine/core";
-import { v4 as uuidv4 } from "uuid";
-import AddFoodModal from "../components/Modal";
+// import { v4 as uuidv4 } from "uuid";
+// import AddFoodModal from "../components/Modal";
 
-type FoodItem = {
-  id: string;
-  name: string;
-  price: number | string;
-  quantity: number | string;
-  category: string;
-};
+// type FoodItem = {
+//   id: string;
+//   name: string;
+//   price: number | string;
+//   quantity: number | string;
+//   category: string;
+// };
 
 export default function FoodTracker() {
-  const [opened, setOpened] = useState(false);
-  const [items, setItems] = useState<FoodItem[]>([]);
-  const categories = ["Main Course", "Drink", "Dessert"];
+  // const [opened, setOpened] = useState(false);
+  // const [items, setItems] = useState<FoodItem[]>([]);
+  // const categories = ["Main Course", "Drink", "Dessert"];
 
   return (
     <Container style={{ maxWidth: 600, margin: "auto", padding: 20 }}>
       <Title order={2} mb="md">
         Food Tracker
       </Title>
-      <Button onClick={}>Add Food Item</Button>
+      <Button >Add Food Item</Button>
       {/* Type additional AddFoodModal here. */}
-      <AddFoodModal>
-        
-      </AddFoodModal>
+      {/* <AddFoodModal>
+
+      </AddFoodModal> */}
 
       <Divider my="md" />
       {/* Type additional total cost here. */}

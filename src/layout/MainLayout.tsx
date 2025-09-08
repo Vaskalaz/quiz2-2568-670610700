@@ -3,8 +3,6 @@ import { AppShell } from "@mantine/core";
 import HeaderComponent from "../components/Header";
 import { useDisclosure } from "@mantine/hooks";
 import Footer from "../components/Footer";
-import ItemCard from "../components/ItemCard";
-import AddFoodModal from "../components/Modal";
 
 export default function MainLayout() {
   const [opened, { toggle }] = useDisclosure();
